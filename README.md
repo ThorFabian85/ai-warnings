@@ -1,5 +1,7 @@
 # AI: The Warnings From Inside the Revolution — Reversent
 
-Standalone editorial website based on the PowerPoint presentation.
+Final refurbished site.
 
-Upload `index.html`, `404.html`, and `README.md` to a GitHub Pages repository root.
+Includes the Reversent network links in this order: Research, Business, Metaphysical Ocean, Introducing Aegis; contact information; clickable Reversent branding that returns to the top; and the downloadable PDF `the-door-we-should-never-open.pdf`.
+
+Upload all four files to the GitHub Pages repository root.
