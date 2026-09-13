@@ -5,7 +5,7 @@
   const shell = $('#site-shell'), scene = $('#breach-scene'), clockPanel = $('#countdown');
   if (!shell || !scene || !clockPanel) return;
   const digits = [...document.querySelectorAll('.countdown-digits')];
-  const skip = $('#scene-skip'), restore = $('#restore-site'), ashActions = $('.ash-actions');
+  const sceneTitle = $('#breach-title'), restore = $('#restore-site'), ashActions = $('.ash-actions');
   const actor = $('.scene-robot'), threshold = $('.threshold-image');
   const portal = $('.threshold-opening'), leaf = $('.threshold-leaf');
   const vignette = $('.scene-vignette'), label = $('#scene-label'), announcement = $('#scene-announcement');
@@ -260,7 +260,7 @@
     shell.style.clipPath = 'inset(100%)'; shell.style.transform = ''; actor.style.opacity = '0'; portal.style.opacity = '0';
     vignette.style.opacity = '0';
     status('ashes', 'The fictional sequence has ended. Only ashes remain. Activate Restore to return to the unchanged website.');
-    label.textContent = ''; skip.hidden = true; ashActions.hidden = false;
+    label.textContent = ''; ashActions.hidden = false;
     paintAsh(0); restore.focus({ preventScroll: true });
   }
   function drawScene(t) {
@@ -308,7 +308,7 @@
     saved = { scrollX: window.scrollX, scrollY: window.scrollY, focus: document.activeElement, shellStyle: shell.style.cssText, inert: shell.inert, overflow: document.body.style.overflow, behavior: document.documentElement.style.scrollBehavior };
     document.documentElement.style.scrollBehavior = 'auto'; window.scrollTo(0, 0);
     document.body.style.overflow = 'hidden'; shell.inert = true;
-    ashActions.hidden = true; skip.hidden = false; sceneReduced = reduced.matches;
+    ashActions.hidden = true; sceneReduced = reduced.matches;
     label.textContent = 'CONTAINMENT LOST'; vignette.style.background = '';
     status('breach', 'A fictional visual sequence is starting. A robot steps out of the door. Press Escape to restore the page at any time.');
     try {
@@ -316,7 +316,7 @@
       else { scene.setAttribute('open', ''); scene.setAttribute('role', 'dialog'); scene.setAttribute('aria-modal', 'true'); }
       document.dispatchEvent(new CustomEvent('reversent:scene', { detail: { active: true } }));
       openDoor(0); resizeScene(); frameDoor(); sceneStart = performance.now(); lastFrame = 0; hiddenAt = null;
-      drawScene(0); skip.focus({ preventScroll: true }); frame = requestAnimationFrame(animate);
+      drawScene(0); sceneTitle.focus({ preventScroll: true }); frame = requestAnimationFrame(animate);
     } catch (error) { console.warn('The visual sequence could not start.', error); restorePage(); }
   }
   function restorePage() {
@@ -341,12 +341,11 @@
     tick();
   }
   restore.addEventListener('click', restorePage);
-  skip.addEventListener('click', finishScene);
   scene.addEventListener('cancel', event => { event.preventDefault(); restorePage(); });
   scene.addEventListener('close', () => { if (phase !== 'countdown' && saved) restorePage(); });
   scene.addEventListener('keydown', event => {
     if (event.key === 'Escape') { event.preventDefault(); restorePage(); }
-    else if (event.key === 'Tab') { event.preventDefault(); (phase === 'ashes' ? restore : skip).focus(); }
+    else if (event.key === 'Tab') { event.preventDefault(); (phase === 'ashes' ? restore : sceneTitle).focus({ preventScroll: true }); }
   });
   document.addEventListener('visibilitychange', () => {
     if (phase === 'countdown') { tick(); return; }

@@ -61,8 +61,8 @@ selected quote, open disclosures, keyboard focus, and ambient-motion preference.
 It starts a fresh ten-minute countdown. No page content is removed or reloaded.
 The effect does not modify files, accounts, or other websites.
 
-Skip to ashes jumps directly to the final scene. Escape restores the page at
-any stage. Reduced-motion mode uses a short sequence of static images instead
+There is no Skip to ashes button. Restore appears after the sequence ends.
+Escape restores the page at any stage. Reduced-motion mode uses a short sequence of static images instead
 of walking, gunfire, or a moving burn edge. There is no audio or full-screen
 strobe. If canvas is unavailable, the static fallback still supports restoration.
 
