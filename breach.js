@@ -5,7 +5,6 @@
   const shell = $('#site-shell'), scene = $('#breach-scene'), clockPanel = $('#countdown');
   if (!shell || !scene || !clockPanel) return;
   const digits = [...document.querySelectorAll('.countdown-digits')];
-  const pauseButton = $('#countdown-pause');
   const skip = $('#scene-skip'), restore = $('#restore-site'), ashActions = $('.ash-actions');
   const actor = $('.scene-robot'), threshold = $('.threshold-image');
   const portal = $('.threshold-opening'), leaf = $('.threshold-leaf');
@@ -15,7 +14,7 @@
   let ctx = null;
   try { ctx = canvas.getContext('2d'); } catch { /* The static fallback remains restorable. */ }
   let phase = 'countdown', remaining = duration, deadline = performance.now() + duration;
-  let countdownPaused = false, timer = 0, frame = 0, lastFrame = 0;
+  let timer = 0, frame = 0, lastFrame = 0;
   let sceneStart = 0, hiddenAt = null, saved = null, width = 1, height = 1, door = {};
   let currentPose = { x: 0, y: 0, scale: 1 }, sceneReduced = reduced.matches;
   const clamp = (n, a = 0, b = 1) => Math.max(a, Math.min(b, n));
@@ -105,29 +104,19 @@
     digits.forEach(el => { el.textContent = text; });
     const header = $('.header-clock');
     header?.setAttribute('aria-label', `Fictional simulation countdown: ${Math.floor(total / 60)} minutes, ${total % 60} seconds`);
-    document.body.classList.toggle('countdown-urgent', total <= 60 && !countdownPaused);
-    document.body.classList.toggle('countdown-paused', countdownPaused);
-    pauseButton.textContent = countdownPaused ? 'Resume countdown' : 'Pause countdown';
-    pauseButton.setAttribute('aria-pressed', String(countdownPaused));
+    document.body.classList.toggle('countdown-urgent', total <= 60);
   }
   function tick() {
     clearTimeout(timer); timer = 0;
     if (phase !== 'countdown') return;
-    if (!countdownPaused) remaining = Math.max(0, deadline - performance.now());
+    remaining = Math.max(0, deadline - performance.now());
     showClock();
-    if (remaining <= 0 && !countdownPaused) {
+    if (remaining <= 0) {
       if (!document.hidden) startScene();
       return;
     }
-    if (!countdownPaused) timer = setTimeout(tick, Math.min(1000, remaining));
+    timer = setTimeout(tick, Math.min(1000, remaining));
   }
-  pauseButton.addEventListener('click', () => {
-    if (phase !== 'countdown') return;
-    if (!countdownPaused) remaining = Math.max(0, deadline - performance.now());
-    else deadline = performance.now() + remaining;
-    countdownPaused = !countdownPaused;
-    tick();
-  });
   function resizeScene() {
     width = Math.max(1, window.innerWidth); height = Math.max(1, window.innerHeight);
     const ratio = Math.min(window.devicePixelRatio || 1, 1.5);
@@ -345,7 +334,7 @@
     const previousFocus = previous.focus;
     scene.dataset.state = 'idle';
     ashActions.hidden = true; announcement.textContent = '';
-    remaining = duration; deadline = performance.now() + duration; countdownPaused = false;
+    remaining = duration; deadline = performance.now() + duration;
     document.dispatchEvent(new CustomEvent('reversent:scene', { detail: { active: false } }));
     if (previousFocus?.isConnected && previousFocus !== document.body) previousFocus.focus({ preventScroll: true });
     else { clockPanel.setAttribute('tabindex', '-1'); clockPanel.focus({ preventScroll: true }); }

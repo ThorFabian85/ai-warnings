@@ -334,8 +334,8 @@ summary::-webkit-details-marker { display: none; }
 .countdown-panel { max-width: 442px; margin-top: 34px; padding: 20px 0 0; border-top: 1px solid #a546344f; }
 .countdown-heading { display: flex; align-items: center; gap: 9px; }.countdown-heading .micro { color: #c5a198; font-size: 9px; letter-spacing: .1em; }.countdown-dot { width: 4px; height: 4px; background: #e9452a; border-radius: 50%; box-shadow: 0 0 12px #e934274a; }.fiction-label { color: #ad8279; margin-left: 5px; }
 .countdown-row { display: flex; align-items: center; gap: 30px; margin-top: 11px; }.countdown-large { font-size: 43px; color: #ff8766; letter-spacing: -.035em; line-height: 1.2; }
-.countdown-controls { display: flex; flex-wrap: wrap; align-items: center; gap: 7px 15px; }.countdown-controls button { padding: 9px 0; min-height: 40px; background: none; color: #bf9990; font-size: 10px; text-align: left; }.countdown-controls button:hover { color: #ffb89a; }
-.countdown-urgent .countdown-digits { color: #ff553b; }.countdown-paused .countdown-digits { color: #9e8c89; }
+
+.countdown-urgent .countdown-digits { color: #ff553b; }
 .paper { color-scheme: dark; background: radial-gradient(ellipse at 90% 0%, #48140e55, transparent 65%), #160a0d; border-block: 1px solid #be59463b; }
 .paper a:focus-visible, .paper button:focus-visible { outline-color: #ffad90; }.paper ::selection { background: #ad3a2b; color: #fff1e8; }
 .quote-tabs button { border-bottom-color: #c65f4426; }.quote-tabs button[aria-selected="true"] { color: #ffe4d2; border-color: #ff7951; }.quote-panel blockquote { color: #f1dcd5; }
@@ -362,7 +362,7 @@ summary::-webkit-details-marker { display: none; }
 @media (max-width: 680px) {
  .site-header { gap: 10px; padding-inline: 14px; }.header-clock .countdown-digits { font-size: 16px; }.header-clock > span { font-size: 6px; }.header-clock { padding-inline: 2px; }.network-shortcut { font-size: 10px; padding-inline: 10px; }.mobile-menu > summary { min-width: 35px; }.brand-name { font-size: 11px; }
  .hero { min-height: 1120px; }.hero-inner { padding-bottom: 400px; }.hero-art { top: 585px; }.hero-shade { background: linear-gradient(180deg,#090607 0%,#090607 45%,transparent 64%,transparent 85%,#090607); }
- .countdown-panel { margin-top: 24px; padding-top: 18px; }.countdown-row { gap: 22px; }.countdown-large { font-size: 39px; }.countdown-controls { gap: 0 15px; }.countdown-controls button { font-size: 10px; }.countdown-heading .micro { font-size: 8px; }.fiction-label { margin-left: 2px; }
+ .countdown-panel { margin-top: 24px; padding-top: 18px; }.countdown-row { gap: 22px; }.countdown-large { font-size: 39px; }.countdown-heading .micro { font-size: 8px; }.fiction-label { margin-left: 2px; }
  .scene-topline { left: 20px; right: 20px; }#scene-label { font-size: 8px; letter-spacing: .13em; }#scene-skip { padding: 10px 12px; font-size: 10px; }
 }
 @media (max-width: 370px) { .site-header .brand-name { display: none; }.site-header .brand img { width: 30px; }.site-header { gap: 12px; }.hero { min-height: 1210px; }.hero-art { top: 660px; }.hero-shade { background: linear-gradient(180deg,#090607 0%,#090607 48%,transparent 70%,transparent 85%,#090607); }.countdown-row { gap: 17px; }.countdown-large { font-size: 35px; } }

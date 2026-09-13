@@ -36,14 +36,15 @@ stranded below the visible area. No wheel handling or extra scrollbar is added.
 
 The countdown is explicitly labeled as a fictional scenario. It begins at
 10:00 each time the page loads and uses elapsed time, rather than counting
-animation frames. Pause countdown freezes it; Resume continues from that time.
+animation frames. The countdown runs continuously; visitors cannot pause it.
 The finale begins only when the ten-minute countdown reaches zero. There is no
 manual trigger in either the website or the portable preview.
 
 The full sequence lasts about 24 seconds:
 
 1. The original illustrated door opens on its own hinge, then a metal
-   endoskeleton walks through the opening into the foreground.
+   endoskeleton walks through the opening into the foreground. Decorative side
+   loops, head brackets, and the raised gun rail have been removed.
 2. Three localized muzzle flashes and impact fractures shatter the screen.
 3. Flames consume the visible page from the bottom upward.
 4. The fire cools, leaving a field of ash.
@@ -119,7 +120,7 @@ DOM/canvas model. Responsive CSS and narrow-screen sizing were inspected.
 The SVG doorway and endoskeleton were rendered and visually inspected. The
 original v4.5 logo was verified byte-for-byte against the supplied ZIP. A fake
 clock exercised the actual shipped scripts: exact 600-second expiry, countdown
-pause, background-tab handling, all scene phases, deferred Restore visibility,
+continuous progression, background-tab handling, all scene phases, deferred Restore visibility,
 three replay cycles at each model width from 320 to 1920, Escape, reduced
 motion, canvas failure, state restoration, and timer/animation-loop cleanup.
 Door regression checks cover the exact closed outline, fixed hinge, robot-to-sill
