@@ -1,0 +1,93 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 780" fill="none" aria-hidden="true">
+<defs>
+ <linearGradient id="steel" x1=".05" y1=".2" x2="1" y2=".65"><stop stop-color="#141b20"/><stop offset=".22" stop-color="#8a979e"/><stop offset=".37" stop-color="#e0e5e5"/><stop offset=".48" stop-color="#5b686f"/><stop offset=".7" stop-color="#242d34"/><stop offset=".88" stop-color="#9ca9ac"/><stop offset="1" stop-color="#272f35"/></linearGradient>
+ <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#cbd5d8"/><stop offset=".24" stop-color="#78888f"/><stop offset=".47" stop-color="#25313a"/><stop offset=".77" stop-color="#64727a"/><stop offset="1" stop-color="#111b22"/></linearGradient>
+ <linearGradient id="darkSteel"><stop stop-color="#080e13"/><stop offset=".33" stop-color="#3e4a54"/><stop offset=".55" stop-color="#869196"/><stop offset=".72" stop-color="#27313a"/><stop offset="1" stop-color="#090d11"/></linearGradient>
+ <linearGradient id="skull" x1=".12" y1=".12" x2=".85" y2=".9"><stop stop-color="#ced7da"/><stop offset=".3" stop-color="#70858e"/><stop offset=".5" stop-color="#cbd3d4"/><stop offset=".64" stop-color="#3b4953"/><stop offset=".88" stop-color="#899b9f"/><stop offset="1" stop-color="#161e27"/></linearGradient>
+ <radialGradient id="redEye"><stop stop-color="#fff0bd"/><stop offset=".17" stop-color="#ff9f78"/><stop offset=".38" stop-color="#ff3a21"/><stop offset=".75" stop-color="#b10a0a"/><stop offset="1" stop-color="#350305"/></radialGradient>
+ <radialGradient id="joint"><stop stop-color="#bcc8cc"/><stop offset=".28" stop-color="#4c5e68"/><stop offset=".54" stop-color="#121a22"/><stop offset=".77" stop-color="#85959c"/><stop offset="1" stop-color="#111a22"/></radialGradient>
+ <filter id="eyeGlow" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<!-- Articulated legs, driven by the site's scene clock. -->
+<g class="robot-leg robot-leg-left">
+ <path d="M204 432 224 430 231 522 217 547 192 526Z" fill="url(#darkSteel)" stroke="#859299"/>
+ <path d="M229 440 239 440 246 523 233 532Z" fill="url(#steel)"/>
+ <path d="M205 465 218 464 224 511 211 513Z" fill="#080d11"/>
+ <circle cx="215" cy="538" r="24" fill="url(#joint)"/><circle cx="215" cy="538" r="8" fill="#131c23" stroke="#8a9699"/>
+ <path d="M194 552 215 558 204 680 178 691 180 613Z" fill="url(#plate)" stroke="#6e7d84"/>
+ <path d="M220 559 230 560 220 679 210 680Z" fill="url(#steel)"/>
+ <path d="M186 611 200 610 192 667 182 670Z" fill="#121d25"/>
+ <circle cx="198" cy="689" r="18" fill="url(#joint)"/>
+ <path d="M178 695 210 694 213 730 184 745 126 744 131 726 164 714Z" fill="url(#darkSteel)" stroke="#849097"/>
+ <path d="M133 730 184 731 208 717M152 724 153 740M169 718 170 736" stroke="#99a5a9" stroke-width="2"/>
+</g>
+<g class="robot-leg robot-leg-right">
+ <path d="M279 434 301 432 316 524 298 545 272 529Z" fill="url(#darkSteel)" stroke="#71828a"/>
+ <path d="M268 441 278 440 288 523 277 532Z" fill="url(#steel)"/>
+ <path d="M288 463 300 463 307 512 293 513Z" fill="#080d11"/>
+ <circle cx="298" cy="539" r="25" fill="url(#joint)"/><circle cx="298" cy="539" r="8" fill="#131c23" stroke="#8a9699"/>
+ <path d="M284 559 307 554 326 621 327 692 304 692Z" fill="url(#plate)" stroke="#788991"/>
+ <path d="M275 560 285 560 301 681 292 683Z" fill="url(#steel)"/>
+ <path d="M309 608 320 612 323 672 312 670Z" fill="#111c25"/>
+ <circle cx="310" cy="691" r="18" fill="url(#joint)"/>
+ <path d="M294 702 321 696 337 720 370 731 373 747 323 747 297 733Z" fill="url(#darkSteel)" stroke="#849097"/>
+ <path d="M301 719 328 733 364 735M336 723 333 742M352 730 349 745" stroke="#99a5a9" stroke-width="2"/>
+</g>
+<!-- Spine, hip assembly and ribs. -->
+<path d="M233 295 266 295 269 416 234 416Z" fill="url(#darkSteel)" stroke="#8a999d"/>
+<path d="M231 315H270M231 330H270M231 345H270M231 360H270M231 375H270M231 390H270" stroke="#99a7ad" stroke-width="5"/>
+<path d="M206 325 219 326 235 395 224 403Z M280 326 292 325 282 404 270 397Z" fill="url(#steel)"/>
+<path d="M207 390 228 405 272 405 300 390 320 415 297 454 275 451 251 425 227 451 204 450 185 416Z" fill="url(#plate)" stroke="#a0aeb1" stroke-width="1.5"/>
+<circle cx="211" cy="425" r="18" fill="url(#joint)"/><circle cx="292" cy="425" r="18" fill="url(#joint)"/>
+<path d="M188 234 224 220 253 229 279 220 315 238 304 302 278 326 225 325 197 301Z" fill="#0b131b" stroke="#82969e" stroke-width="2"/>
+<path d="M182 234 214 228 243 245 240 278 192 257Z M261 246 290 226 323 234 312 260 267 278Z" fill="url(#plate)" stroke="#92a2a7"/>
+<path d="M193 269 239 288 240 300 194 280Z M198 289 240 307 239 319 204 305Z M266 290 310 270 309 282 267 302Z M266 309 306 290 300 306 266 321Z" fill="url(#steel)" stroke="#8999a1"/>
+<path d="M238 233 260 231 269 292 257 319 244 319 234 291Z" fill="url(#darkSteel)" stroke="#9aa9b0"/>
+<circle cx="250" cy="260" r="11" fill="url(#joint)"/><circle cx="250" cy="260" r="3" fill="#d12714"/>
+<path d="M188 294Q173 333 206 374M316 294Q330 332 297 375" stroke="#252f38" stroke-width="9"/><path d="M187 295Q175 332 205 372M316 295Q328 331 298 373" stroke="#6b7c85" stroke-width="2"/>
+<!-- Left arm and fingers. -->
+<g class="robot-arm-left">
+ <circle cx="169" cy="247" r="28" fill="url(#joint)"/><path d="M161 267 183 273 157 341 137 334Z" fill="url(#steel)" stroke="#72858e"/>
+ <path d="M145 269 154 273 137 333 128 331Z" fill="url(#darkSteel)"/>
+ <circle cx="142" cy="348" r="19" fill="url(#joint)"/>
+ <path d="M126 364 150 362 140 411 128 430 109 422Z" fill="url(#plate)" stroke="#8c9ba2"/><path d="M132 372 137 372 128 412 123 411Z" fill="#c5d3d6"/>
+ <path d="M110 422 135 430 130 452 108 454 97 438Z" fill="url(#darkSteel)" stroke="#7e909b"/>
+ <path d="M103 449 96 463 101 479M112 454 108 472 111 483M122 455 120 472 125 481M132 444 143 452 145 465" stroke="url(#steel)" stroke-width="7" stroke-linecap="round"/>
+</g>
+<!-- Neck and skull. -->
+<path d="M233 185 269 185 269 225 233 225Z" fill="url(#darkSteel)"/><path d="M233 195H269M233 206H269M233 217H269" stroke="#9dadb3" stroke-width="4"/>
+<path d="M222 183 233 190 224 222 215 219Z M270 191 280 184 287 220 278 224Z" fill="url(#steel)"/>
+<path d="M202 80 217 58 244 49 273 54 295 69 307 98 302 136 286 169 278 189 263 199 235 196 218 180 207 150 196 118Z" fill="url(#skull)" stroke="#a6b7bf" stroke-width="1.4"/>
+<path d="M211 82 225 68 268 67 289 82 287 102 263 113 244 107 220 110 211 103Z" fill="url(#plate)"/>
+<path d="M244 53 246 95M219 74 213 95M283 74 294 98" stroke="#dce3e4" stroke-opacity=".42" stroke-width="2"/>
+<path d="M204 111 224 111 244 122 238 140 217 142 205 131Z M257 122 278 111 299 112 295 134 279 142 261 137Z" fill="#030607" stroke="#637782" stroke-width="2"/>
+<path d="M202 107 226 109 244 120M256 120 280 109 303 106" stroke="#cbd4d6" stroke-width="5"/>
+<g filter="url(#eyeGlow)" fill="#ff2719"><ellipse cx="224" cy="127" rx="12" ry="6"/><ellipse cx="279" cy="127" rx="12" ry="6"/></g>
+<ellipse cx="224" cy="127" rx="10" ry="5" fill="url(#redEye)"/><ellipse cx="279" cy="127" rx="10" ry="5" fill="url(#redEye)"/>
+<path d="M249 124 244 143 239 150 250 153 261 149 255 143Z" fill="#101a20" stroke="#8d9da3"/>
+<path d="M209 139 222 151 223 170 211 160Z M282 151 297 138 294 160 281 171Z" fill="url(#darkSteel)"/>
+<path d="M221 161 235 157 268 159 282 164 275 183 263 191 240 188 224 179Z" fill="#05090c" stroke="#b4c0c3" stroke-width="3"/>
+<path d="M227 162 234 162 234 172 227 171Z M237 161 244 162 244 172 237 172Z M247 162 254 162 254 173 247 173Z M257 162 264 163 264 173 257 173Z M267 163 275 165 273 174 267 173Z" fill="#b6c3c6" stroke="#25343c"/>
+<path d="M231 181 235 174 266 176 270 183 260 188 241 186Z" fill="url(#steel)"/><path d="M237 179V185M246 178V186M255 179V187M264 180V186" stroke="#26333b" stroke-width="2"/>
+<path d="M195 104 189 110 194 134 205 144M307 103 315 109 310 137 299 146" fill="url(#darkSteel)" stroke="#8d9ca4"/>
+<!-- Foreground gun arm. The barrel points toward the viewer. -->
+<g class="robot-gun-arm">
+ <circle cx="332" cy="249" r="29" fill="url(#joint)"/>
+ <path d="M335 269 354 255 387 297 374 314Z" fill="url(#steel)" stroke="#a4b1b6"/>
+ <path d="M347 263 357 257 390 289 382 299Z" fill="url(#darkSteel)"/>
+ <circle cx="384" cy="308" r="21" fill="url(#joint)"/>
+ <path d="M389 288 409 290 432 321 417 345 397 333Z" fill="url(#plate)" stroke="#8c9fa8"/>
+ <path d="M409 312 436 309 452 332 446 356 429 359 413 343Z" fill="url(#steel)" stroke="#a6b0b4"/>
+ <path d="M421 331 438 327M424 340 444 336M428 349 446 345" stroke="#222f38" stroke-width="4"/>
+ <path d="M383 276 408 254 467 274 490 319 477 347 419 329Z" fill="url(#darkSteel)" stroke="#7e909b" stroke-width="2"/>
+ <path d="M412 321 424 327 419 372 397 366 401 328Z" fill="#10181f" stroke="#788b96"/>
+ <path d="M414 337 409 359M405 340 417 343M404 348 415 351M403 356 414 359" stroke="#40505a" stroke-width="2"/>
+ <path d="M405 264 456 284 467 306 413 287Z" fill="url(#plate)"/>
+ <path d="M413 257 426 245 475 267 486 281" stroke="#a6b1b5" stroke-width="5"/>
+ <path d="M436 286 481 304 475 338 430 321Z" fill="url(#steel)" stroke="#8498a3"/>
+ <ellipse cx="477" cy="316" rx="27" ry="34" transform="rotate(-18 477 316)" fill="url(#darkSteel)" stroke="#b5c0c4" stroke-width="2"/>
+ <ellipse cx="477" cy="316" rx="17" ry="24" transform="rotate(-18 477 316)" fill="#010305" stroke="#586b78" stroke-width="4"/>
+ <ellipse cx="477" cy="316" rx="9" ry="15" transform="rotate(-18 477 316)" fill="#170b08"/>
+ <path d="M389 276 395 288M399 278 405 291M409 282 415 296" stroke="#bcc8cd" stroke-opacity=".5" stroke-width="2"/>
+</g>
+</svg>

@@ -1,95 +1,331 @@
-<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>AI: The Warnings From Inside the Revolution — Reversent</title><meta name="description" content="What leading AI researchers and technology leaders have said about capability, control and existential risk."><style>
-:root{--bg:#05090e;--bg2:#08131b;--card:#0d1721;--ink:#f4f6f7;--muted:#a9b4bd;--warn:#ff6b5f;--amber:#ffb15a;--cyan:#60e6dc;--line:#20303d;--line2:#344856}
-*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:radial-gradient(circle at 82% 7%,rgba(96,230,220,.08),transparent 24%),radial-gradient(circle at 15% 30%,rgba(255,107,95,.06),transparent 25%),var(--bg);color:var(--ink);font-family:Inter,Arial,sans-serif;line-height:1.65}
-a{color:inherit}.nav{position:sticky;top:0;z-index:30;border-bottom:1px solid var(--line);background:rgba(5,9,14,.92);backdrop-filter:blur(16px)}.navin{max-width:1240px;margin:auto;padding:14px 24px;display:flex;align-items:center;gap:26px}.brand{margin-right:auto;font-weight:850;letter-spacing:.24em;font-size:15px}.brand small{display:block;color:var(--cyan);font-size:8px;letter-spacing:.34em}.nav a{text-decoration:none;font-size:13px;color:#d8e1e7}.pill{border:1px solid #47616f;border-radius:999px;padding:8px 14px}
-.hero{min-height:760px;border-bottom:1px solid var(--line);background:linear-gradient(180deg,rgba(5,9,14,.05),var(--bg)),repeating-linear-gradient(90deg,transparent 0,transparent 79px,rgba(255,255,255,.018) 80px)}.hero-inner{max-width:1240px;margin:auto;padding:130px 24px 95px}.kicker,.eyebrow{color:var(--warn);letter-spacing:.28em;font-size:11px;font-weight:850}h1{font-size:clamp(58px,8.5vw,126px);line-height:.86;letter-spacing:-.055em;margin:28px 0 30px;max-width:1100px}.hero p{max-width:800px;font-size:22px;color:#d8e1e7}
-.signal{margin-top:50px;display:grid;grid-template-columns:repeat(3,1fr);gap:16px;max-width:980px}.signal .s{border-top:1px solid var(--line2);padding-top:14px}.signal b{display:block;font-size:14px;color:var(--warn);letter-spacing:.06em}.signal span{display:block;font-size:13px;color:var(--muted);margin-top:4px}
-.wrap{max-width:1160px;margin:auto;padding:86px 24px}.section{border-top:1px solid var(--line)}h2{font-size:clamp(38px,5vw,68px);line-height:1.02;letter-spacing:-.035em;margin:14px 0 28px}h3{font-size:24px;line-height:1.15;margin:0 0 12px}.lede{font-size:20px;color:#d9e1e6;max-width:880px}
-.tension,.quote-grid,.koko,.forecast,.warn-list,.paradox{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}.panel,.quote-card,.f,.p{background:#0a141d;border:1px solid var(--line2);border-radius:18px;padding:28px}.panel strong{display:block;font-size:13px;letter-spacing:.12em;color:var(--cyan);margin-bottom:10px}.question{margin-top:20px;border:1px solid var(--warn);background:#160d0e;border-radius:18px;padding:28px;font-size:24px;font-weight:780}
-.quote-card blockquote{margin:18px 0 0;font-size:24px;line-height:1.45}.quote-card .name{font-size:20px;font-weight:850}.quote-card .org{color:var(--cyan);font-size:13px}.meta,.source{font-size:12px;color:#8997a1;margin-top:14px}
-.profile{display:grid;grid-template-columns:.75fr 1.25fr;gap:34px;border-top:1px solid var(--line2);padding:34px 0}.profile:first-of-type{border-top:0}.role{color:var(--cyan);font-size:13px}.point{margin-bottom:20px}.point b{display:block;color:var(--amber);font-size:13px;letter-spacing:.06em;margin-bottom:4px}
-.step{display:grid;grid-template-columns:150px 1fr;gap:24px;padding:18px 0;border-top:1px solid var(--line)}.step:first-child{border-top:0}.date{color:var(--warn);font-weight:850}.yud{border:1px solid var(--warn);background:linear-gradient(180deg,#190d0e,#0b1117);border-radius:18px;padding:30px}.big{font-size:54px;font-weight:900;color:var(--warn)}
-.forecast{grid-template-columns:repeat(2,1fr)}.warn-item{border-left:2px solid var(--warn);padding:14px 18px;background:#0a1219}.paradox{grid-template-columns:repeat(3,1fr)}.final-safe{margin-top:28px;border:1px solid var(--cyan);padding:25px;border-radius:16px;font-size:22px}
-.final-question{padding:115px 24px;text-align:center;border-top:1px solid var(--line);background:radial-gradient(circle at 50% 50%,rgba(255,107,95,.12),transparent 40%),#060a0f}.inner{max-width:980px;margin:auto}.final-question .q{font-size:30px;line-height:1.35;margin:32px auto}.personal{margin-top:48px;text-align:left;border-top:1px solid var(--line2);padding-top:30px}.personal .label{color:var(--warn);letter-spacing:.22em;font-weight:850;font-size:11px}.personal p{font-size:19px;color:#d5dde2}.footer{border-top:1px solid var(--line);padding:42px 24px;text-align:center;color:#84919b}
-@media(max-width:850px){.navin a:not(.pill){display:none}.signal,.tension,.quote-grid,.koko,.forecast,.warn-list,.paradox{grid-template-columns:1fr}.profile{grid-template-columns:1fr}.step{grid-template-columns:1fr;gap:4px}h1{font-size:58px}.hero-inner{padding-top:95px}}
-
-.door{background:radial-gradient(circle at 50% 0%,rgba(255,107,95,.10),transparent 38%),#060a0f}
-.door-grid{display:grid;grid-template-columns:.82fr 1.18fr;gap:42px;margin-top:36px;align-items:start}
-.door-sticky{position:sticky;top:100px}.door-mark{font-size:clamp(76px,10vw,132px);line-height:.78;font-weight:950;letter-spacing:-.07em;color:var(--warn);opacity:.95}
-.door-thesis{font-size:27px;line-height:1.3;font-weight:800;margin:28px 0;color:#f4f6f7}
-.premises{counter-reset:premise;display:grid;gap:12px}.premise{position:relative;border:1px solid var(--line2);background:#0a141d;border-radius:14px;padding:18px 20px 18px 62px;color:#d8e1e7}.premise:before{counter-increment:premise;content:"P" counter(premise);position:absolute;left:18px;top:17px;color:var(--warn);font-weight:900;letter-spacing:.05em}
-.door-conclusion{margin-top:18px;border-left:3px solid var(--warn);padding:22px 24px;background:#160d0e;font-size:20px}
-.door-line{margin:42px 0 24px;padding:36px 0;border-top:1px solid var(--line2);border-bottom:1px solid var(--line2);font-size:clamp(34px,5vw,62px);line-height:1.04;letter-spacing:-.04em;font-weight:900}
-.download-card{margin-top:28px;border:1px solid var(--cyan);border-radius:18px;padding:26px;display:flex;align-items:center;gap:22px;background:rgba(96,230,220,.035)}.download-card .docicon{width:54px;height:68px;border:1px solid var(--cyan);border-radius:8px;display:grid;place-items:center;color:var(--cyan);font-size:12px;font-weight:900;flex:0 0 auto}.download-card h3{margin-bottom:6px}.download-card p{margin:0;color:var(--muted)}.download-btn{margin-left:auto;white-space:nowrap;text-decoration:none;border:1px solid var(--cyan);color:var(--cyan);border-radius:999px;padding:11px 17px;font-size:13px;font-weight:850}
-@media(max-width:850px){.door-grid{grid-template-columns:1fr}.door-sticky{position:static}.download-card{align-items:flex-start;flex-wrap:wrap}.download-btn{margin-left:0}}
-
-
-.brand-link{text-decoration:none;color:var(--ink);transition:opacity .2s ease}.brand-link:hover{opacity:.78}
-.network{border-top:1px solid var(--line);background:#05090e}.network-in{max-width:1160px;margin:auto;padding:62px 24px 48px}
-.network-head{display:grid;grid-template-columns:1fr 1fr;gap:32px;align-items:end;margin-bottom:34px}.network-head h2{margin:8px 0 0;font-size:clamp(32px,4vw,52px)}
-.network-head p{margin:0;color:var(--muted);max-width:520px;justify-self:end}
-.network-links{display:grid;grid-template-columns:repeat(4,1fr);gap:12px}.network-link{display:block;text-decoration:none;border:1px solid var(--line2);border-radius:14px;padding:18px;background:#0a141d;transition:transform .18s ease,border-color .18s ease,background .18s ease}.network-link:hover{transform:translateY(-2px);border-color:var(--cyan);background:#0d1923}.network-link b{display:block;font-size:14px}.network-link span{display:block;color:var(--muted);font-size:11px;margin-top:5px;letter-spacing:.04em}
-.contact-row{margin-top:34px;padding-top:26px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:22px;align-items:center}.contact-row .label{color:var(--warn);letter-spacing:.2em;font-size:10px;font-weight:850}.contact-row a{color:var(--cyan);text-decoration:none;font-size:15px}.contact-row a:hover{text-decoration:underline}
-.footer .brand{margin-right:0}
-@media(max-width:850px){.network-head{grid-template-columns:1fr}.network-head p{justify-self:start}.network-links{grid-template-columns:1fr 1fr}.contact-row{align-items:flex-start;flex-direction:column}}
-@media(max-width:520px){.network-links{grid-template-columns:1fr}}
-
-</style></head><body id="top">
-<nav class="nav"><div class="navin"><a class="brand brand-link" href="#top" aria-label="Back to top">REVERSENT<small>KEEP THE FUTURE OPEN</small></a><a href="#warnings">Warnings</a><a href="#risk">Risk</a><a href="#forecast">Forecasts</a><a href="#door">The Door</a><a href="#question">The Question</a><a class="pill" href="#network">Reversent Network</a></div></nav>
-<header class="hero"><div class="hero-inner"><div class="kicker">AI SAFETY · WARNING DOSSIER</div><h1>AI: The Warnings From Inside the Revolution</h1><p>What leading AI researchers and technology leaders have said about capability, control and existential risk.</p><div class="signal"><div class="s"><b>CAPABILITY</b><span>Potentially historic gains in science, productivity and economic power.</span></div><div class="s"><b>UNCERTAINTY</b><span>Increasingly capable systems may create catastrophic risks, including loss of human control.</span></div><div class="s"><b>THE QUESTION</b><span>Why are we racing toward superintelligence when we have no control over what we are unleashing?</span></div></div></div></header>
-<section class="section" id="warnings"><div class="wrap"><div class="eyebrow">THE CENTRAL TENSION</div><h2>Unprecedented capability. Unprecedented uncertainty.</h2><div class="tension"><div class="panel"><strong>UNPRECEDENTED CAPABILITY</strong><p>Several leading AI figures expect AI to transform science, productivity and the global economy on a scale comparable to—or beyond—the Industrial Revolution.</p></div><div class="panel"><strong>UNPRECEDENTED UNCERTAINTY</strong><p>Some of the same people also warn that increasingly capable systems could create catastrophic risks, including loss of human control.</p></div></div><div class="question">Why are we racing toward superintelligence when we have no control over what we are unleashing?</div></div></section>
-<section class="section"><div class="wrap"><div class="eyebrow">IN THEIR OWN WORDS</div><h2>Warnings from inside the revolution.</h2><div class="quote-grid"><article class="quote-card"><div class="name">Dario Amodei</div><div class="org">Anthropic</div><blockquote>“Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it.”</blockquote><div class="meta">— Dario Amodei, January 2026</div><div class="source">Source: Dario Amodei, “The Adolescence of Technology” (Jan. 2026).</div></article><article class="quote-card"><div class="name">Demis Hassabis</div><div class="org">Google DeepMind</div><blockquote>“AI is going to be 10 times bigger than the Industrial Revolution, and maybe 10 times faster.”</blockquote><div class="meta">— Demis Hassabis, 2025</div><div class="source">Source: The Guardian interview, Aug. 4, 2025.</div></article><article class="quote-card"><div class="name">Sam Altman</div><div class="org">OpenAI</div><blockquote>“AI will probably most likely lead to the end of the world, but in the meantime, there’ll be great companies.”</blockquote><div class="meta">— Sam Altman, 2015</div><div class="source">Source: Quote widely documented; reported by Forbes and later sources. The remark dates to 2015.</div></article><article class="quote-card"><div class="name">Elon Musk</div><div class="org"></div><blockquote>“With artificial intelligence, we are summoning the demon. In all those stories where there’s the guy with the pentagram and the holy water, it’s like — yeah, he’s sure he can control the demon. Doesn’t work out.”</blockquote><div class="meta">— Elon Musk, 2014</div><div class="source">Source: MIT AeroAstro Centennial Symposium / contemporaneous reporting, Oct. 2014.</div></article></div></div></section>
-<section class="section" id="risk"><div class="wrap"><div class="eyebrow">THE PIONEERS</div><h2>Some of the people who built modern AI are warning about where it could lead.</h2><article class="profile"><div><h3>Geoffrey Hinton</h3><div class="role">Nobel laureate and AI pioneer</div></div><div><div class="point"><b>Risk estimate</b><div>The ‘Godfather of AI’ has warned humanity. Hinton estimates a 10–20% chance that AI could lead to human extinction within the next 30 years.</div></div><div class="point"><b>Capability forecast</b><div>In a Nobel Prize interview, he estimated a roughly 50% chance that AI could become smarter than humans within 5–20 years.</div></div><div class="point"><b>Why it matters</b><div>Hinton helped create the neural-network foundations behind modern AI—and later left Google so he could speak more freely about AI risks.</div></div><div class="source">Sources: NobelPrize.org interview; The Guardian, Dec. 27, 2024. Note: Hinton received the Nobel Prize in Physics in 2024.</div></div></article><article class="profile"><div><h3>Yoshua Bengio</h3><div class="role">Turing Award winner</div></div><div><div class="point"><b>A shift in emphasis</b><div>Bengio, one of the pioneers of deep learning, has become increasingly vocal about catastrophic AI risks and the possibility of losing control over highly autonomous systems.</div></div><div class="point"><b>Reported p(doom)</b><div>Yoshua Bengio has estimated roughly a 20% chance of catastrophic AI outcomes—and has warned that humanity may not have enough time to develop the safeguards needed to control increasingly powerful AI.</div></div><div class="point"><b>His current concern</b><div>In 2025, Bengio and colleagues argued that unchecked AI agency could create risks including deception, self-preservation and potentially irreversible loss of human control.</div></div><div class="source">Sources: Bengio et al., “Superintelligent Agents Pose Catastrophic Risks” (2025); Bengio, “Advanced AI as a Global Public Good and a Global Risk” (2025).</div></div></article><article class="profile"><div><h3>Ilya Sutskever</h3><div class="role">former OpenAI chief scientist</div></div><div><div class="point"><b>“Politics will take interest in you”</b><div>Sutskever argued in his 2025 University of Toronto convocation speech that the same principle applies to AI: whether people pay attention to it or not, AI will profoundly affect their lives.</div></div><div class="point"><b>A rapidly changing future</b><div>He emphasized that as AI improves over the next few years, developments that seem imaginary today may become increasingly real.</div></div><div class="point"><b>The challenge</b><div>He described the challenge posed by AI as, in some sense, humanity’s greatest challenge—and argued that paying attention is essential.</div></div><div class="source">Sources: Ilya Sutskever, University of Toronto honorary-degree/convocation speech, June 6, 2025.</div></div></article></div></section>
-<section class="section"><div class="wrap"><div class="eyebrow">THE FORECASTING COMMUNITY</div><h2>A future that may arrive faster than institutions can adapt.</h2><div class="koko"><div><h3>Daniel Kokotajlo and the AI-forecasting community</h3><p><b>The builders themselves are worried.</b> Kokotajlo has pointed out that OpenAI, Anthropic and Google DeepMind are explicitly pursuing increasingly powerful AI.</p><p><b>AI 2027</b> is a forecasting scenario exploring how an AI race could accelerate rapidly toward superhuman systems.</p><p><b>Important distinction:</b> AI 2027 is a scenario/forecasting exercise—not a confirmed prediction of what will happen.</p><div class="source">Source: Daniel Kokotajlo et al., AI Futures Project / “AI 2027”; Your Undivided Attention interview.</div></div><div><div class="step"><div class="date">March 2027</div><div>AI reaches superhuman coding ability.</div></div><div class="step"><div class="date">August 2027</div><div>AI becomes a superhuman AI researcher.</div></div><div class="step"><div class="date">November 2027</div><div>AI becomes a superintelligent AI researcher—vastly better than the best human AI researchers.</div></div><div class="step"><div class="date">December 2027</div><div>Artificial superintelligence (ASI)—AI substantially better than humans at every cognitive task.</div></div></div></div></div></section>
-<section class="section"><div class="wrap"><div class="eyebrow">THE STRONGEST WARNING</div><h2>Eliezer Yudkowsky</h2><div class="yud"><div class="big">&gt;95%</div><p>Yudkowsky has argued that if sufficiently powerful AI is developed without a reliable alignment solution, the result could be catastrophic for humanity.</p><p>In his 2022 essay, <i>If Anyone Builds It, Everyone Dies</i>, Yudkowsky puts the probability of AI catastrophe at over 95%—among the highest estimates of any prominent AI-risk researcher.</p><p>Unlike the more cautious positions above, Yudkowsky represents one of the most extreme AI-risk views: that humanity may have very little time to solve alignment before superintelligence is built.</p><div class="source">Source: Eliezer Yudkowsky, “If Anyone Builds It, Everyone Dies” (2022).</div></div></div></section>
-<section class="section" id="forecast"><div class="wrap"><div class="eyebrow">HOW SOON?</div><h2>A spectrum of forecasts.</h2><div class="forecast"><div class="f"><div class="date">2026–2027</div><h3>Dario Amodei</h3><p>Powerful AI may be very close; emphasizes that “time is short.”</p></div><div class="f"><div class="date">~2026–2030</div><h3>Demis Hassabis</h3><p>AGI could plausibly arrive within a few years; stresses a limited preparation window.</p></div><div class="f"><div class="date">Late 2020s</div><h3>Sam Altman</h3><p>Has repeatedly described AGI as relatively near.</p></div><div class="f"><div class="date">~2026–2030</div><h3>Elon Musk</h3><p>Has repeatedly forecast highly capable AI on a short horizon.</p></div><div class="f"><div class="date">Years–decades</div><h3>Hinton / Bengio</h3><p>Focus more on the risk and capability trajectory than on a single arrival date.</p></div><div class="f"><div class="date">Near-term</div><h3>Sutskever / Kokotajlo</h3><p>Treat rapid progress and its consequences as problems requiring attention now.</p></div></div><div class="source">These are approximate summaries of public statements.</div></div></section>
-<section class="section"><div class="wrap"><div class="eyebrow">COMMON GROUND</div><h2>What do these warnings have in common?</h2><div class="warn-list"><div class="warn-item">AI capability may advance faster than institutions can adapt.</div><div class="warn-item">The same technology can create enormous benefits and enormous risks.</div><div class="warn-item">Human control becomes harder to guarantee as systems become more autonomous and capable.</div><div class="warn-item">The problem is not simply “Will AI become intelligent?” but “Can we remain in control of what increasingly intelligent systems do?”</div><div class="warn-item">Several leading researchers warn that AI safety, governance, and international coordination are not keeping pace with the rapid development of AI capabilities.</div></div><div class="source">Synthesis of the statements presented; it is not a claim that all speakers agree on the same scenario.</div></div></section>
-<section class="section"><div class="wrap"><div class="eyebrow">THE UNCOMFORTABLE PARADOX</div><h2>We are building it while warning about it.</h2><div class="paradox"><div class="p"><h3>We are building it</h3><p>The companies and researchers developing frontier AI are also among the people warning about its potential dangers.</p></div><div class="p"><h3>We may benefit enormously</h3><p>AI could accelerate science, medicine, productivity, and economic growth on a historic scale. But the greater its capabilities become, the greater its potential for harm.</p></div><div class="p"><h3>We may also create unprecedented risks</h3><p>Leading researchers are taking the risks seriously. But if the potential consequences include existential harm and extreme suffering (S-risk), is ‘taking the risk seriously’ enough?</p></div></div><div class="final-safe">“The goal should not be panic or complacency—but building safeguards before capability outruns our ability to govern it.”</div></div></section>
-
-<section class="section door" id="door"><div class="wrap">
-<div class="eyebrow">THE DOOR WE SHOULD NEVER OPEN</div>
-<h2>The danger is not only what superintelligence might do. It is what it would make possible.</h2>
-<div class="door-grid">
-<div class="door-sticky">
-<div class="door-mark">DO<br>NOT<br>OPEN.</div>
-<div class="door-thesis">The danger of superintelligence is not primarily that it will actualize hell. The danger is that we create the power that makes hell actualizable.</div>
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#090607">
+  <meta name="description" content="Warnings from inside the AI revolution. A Reversent dossier on capability, control, and the door we should never open.">
+  <meta property="og:title" content="AI: The Warnings From Inside the Revolution — Reversent">
+  <meta property="og:description" content="Unprecedented capability. Unprecedented uncertainty. The voices, the forecasts, and the argument for keeping the future open.">
+  <meta property="og:type" content="website">
+  <title>AI: The Warnings From Inside the Revolution — Reversent</title>
+  <link rel="icon" href="assets/reversent-mark.png" type="image/png">
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <div id="top" tabindex="-1"></div>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div id="site-shell">
+  <header class="site-header">
+    <a class="brand" href="#top" aria-label="Reversent — return to top">
+      <img src="assets/reversent-mark.png" width="34" height="31" alt="">
+      <span class="brand-name">REVERSENT</span><span class="brand-kind">AI warnings</span>
+    </a>
+    <nav class="desktop-nav" aria-label="Main navigation">
+      <a class="home-pill" href="#top" aria-current="page">Home</a>
+      <a href="#warnings">The voices</a><a href="#forecast">The forecasts</a><a href="#door">The door</a>
+    </nav>
+    <a class="header-clock" hidden href="#countdown" aria-label="Fictional breach countdown"><span>Simulation</span><time class="countdown-digits" aria-hidden="true">10:00</time></a>
+    <a class="network-shortcut" href="#network"><span class="network-long">Reversent </span>Network <span aria-hidden="true">↓</span></a>
+    <details class="mobile-menu">
+      <summary aria-label="Navigation menu"><span>Menu</span><span class="menu-icon" aria-hidden="true"></span></summary>
+      <nav aria-label="Mobile navigation">
+        <a class="mobile-home" href="#top">Home <span aria-hidden="true">↑</span></a>
+        <a href="#warnings">The voices <span>01</span></a><a href="#risk">The pioneers <span>02</span></a>
+        <a href="#forecast">The forecasts <span>03</span></a><a href="#door">The door <span>04</span></a>
+        <a href="#network">Reversent Network <span aria-hidden="true">↓</span></a>
+      </nav>
+    </details>
+  </header>
+  <main id="main">
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="hero-art" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" class="threshold-image" viewBox="0 0 1600 1000" preserveAspectRatio="xMidYMid slice" fill="none" aria-hidden="true">
+  <defs>
+    <radialGradient id="a"><stop stop-color="#6c1810" stop-opacity=".42"/><stop offset="1" stop-color="#090607" stop-opacity="0"/></radialGradient>
+    <linearGradient id="b" x1="1020" y1="250" x2="1360" y2="600" gradientUnits="userSpaceOnUse"><stop stop-color="#492c2a"/><stop offset=".4" stop-color="#241211"/><stop offset="1" stop-color="#090606"/></linearGradient>
+    <linearGradient id="c" x1="1066" y1="200" x2="1320" y2="710" gradientUnits="userSpaceOnUse"><stop stop-color="#9b6251" stop-opacity=".45"/><stop offset=".45" stop-color="#6f2421" stop-opacity=".2"/><stop offset="1" stop-color="#ff8962" stop-opacity=".55"/></linearGradient>
+    <linearGradient id="d" x1="1075" y1="380" x2="1332" y2="390" gradientUnits="userSpaceOnUse"><stop stop-color="#190c0c"/><stop offset=".95" stop-color="#050203"/><stop offset="1" stop-color="#a12812"/></linearGradient>
+    <linearGradient id="e" x1="1210" y1="711" x2="805" y2="990" gradientUnits="userSpaceOnUse"><stop stop-color="#ff6032" stop-opacity=".22"/><stop offset="1" stop-color="#ed3b19" stop-opacity="0"/></linearGradient>
+    <filter id="f" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="22"/></filter>
+    <filter id="g" x="-100%" y="-100%" width="300%" height="300%"><feGaussianBlur stdDeviation="5"/></filter>
+    <radialGradient id="threshold-depth" cx=".68" cy=".75" r=".85"><stop stop-color="#65150d"/><stop offset=".48" stop-color="#230605"/><stop offset="1" stop-color="#030203"/></radialGradient>
+  </defs>
+  <ellipse cx="1175" cy="510" rx="600" ry="530" fill="url(#a)"/>
+  <g stroke="#9c3a2c" stroke-opacity=".075">
+    <path d="M854 72 1538 20 1470 823 826 757Z"/><path d="M880 94 1517 44 1454 812 853 754Z"/>
+    <path d="M907 118 1496 69 1438 801 880 751Z"/><path d="M934 141 1474 95 1422 790 907 748Z"/>
+    <path d="M961 165 1453 120 1407 779 934 745Z"/><path d="M988 189 1432 145 1391 768 961 742Z"/>
+    <path d="M1015 212 1411 170 1375 757 988 739Z"/>
+    <path d="M220 950 1120 720M620 1000 1180 722M1450 1000 1295 727M1600 850 1345 730"/>
+    <path d="M420 890 1600 879M705 813 1500 809M911 761 1430 762"/>
+  </g>
+  <path d="M1080 716 1333 732 961 1000 517 1000Z" fill="url(#e)"/>
+  <path d="M1061 241 1372 198 1347 737 1050 718Z" fill="#0a0506" stroke="#a94c3a" stroke-opacity=".3"/>
+  <path d="M1061 241 1372 198 1351 213 1078 252 1067 704 1050 718Z" fill="url(#b)"/>
+  <path class="threshold-opening" d="M1078 252 1351 213 1329 718 1067 704Z" fill="url(#threshold-depth)" opacity="0"/>
+  <g class="threshold-leaf">
+  <path data-door-points="1078,252 1351,213 1329,718 1067,704" data-door-closed="true" d="M1078 252 1351 213 1329 718 1067 704Z" fill="url(#d)" stroke="url(#c)"/>
+  <path data-door-points="1345,218 1323,713 1071,699" d="M1345 218 1323 713 1071 699" stroke="#ff6032" stroke-width="13" stroke-opacity=".48" filter="url(#f)"/>
+  <path data-door-points="1345,218 1323,713 1071,699" d="M1345 218 1323 713 1071 699" stroke="#ff6032" stroke-width="3" stroke-opacity=".8" filter="url(#g)"/>
+  <path data-door-points="1345,218 1323,713 1071,699" d="M1345 218 1323 713 1071 699" stroke="#ffc5a0" stroke-width="1.5"/>
+  <path data-door-points="1334,452 1333,480" d="M1334 452 1333 480" stroke="#ffd1af" stroke-width="2" opacity=".6"/>
+  </g>
+  <path d="M1067 704 1329 718 1347 737 1050 718Z" fill="#4b1e16" opacity=".6"/>
+  <path d="M1050 718 1347 737" stroke="#e86738" stroke-opacity=".48"/>
+</svg>
+<canvas id="threshold-field"></canvas></div>
+      <div class="hero-shade" aria-hidden="true"></div>
+      <div class="hero-inner wrap">
+        <p class="eyebrow"><span class="status-dot" aria-hidden="true"></span> Independent AI safety dossier</p>
+        <h1 id="hero-title">The warnings<br>
+from inside<br>
+<span>the revolution.</span></h1>
+        <p class="hero-deck">The people building artificial intelligence<br class="desktop-break"> are also warning us about it.</p>
+        <p class="hero-description">Capability. Control. Existential risk.<br>
+And the threshold we may be about to cross.</p>
+        <div class="actions"><a class="button button-light" href="#warnings">Read the warnings <span aria-hidden="true">↘</span></a><a class="button button-quiet" href="#door">The Reversent argument <span aria-hidden="true">↗</span></a></div>
+        <div class="countdown-panel" id="countdown" hidden>
+          <div class="countdown-heading"><span class="countdown-dot" aria-hidden="true"></span><span class="micro">Containment clock <span class="fiction-label">/ Fictional scenario</span></span></div>
+          <div class="countdown-row"><time class="countdown-digits countdown-large" role="timer" aria-label="Time until the visual sequence begins" aria-live="off">10:00</time><div class="countdown-controls"><button type="button" id="countdown-pause" aria-pressed="false">Pause countdown</button></div></div>
+        </div>
+      </div>
+      <div class="hero-caption"><span class="micro">Power changes what is possible.</span><button class="motion-toggle" type="button" aria-pressed="false" aria-label="Pause ambient animation" hidden><span class="motion-icon" aria-hidden="true">Ⅱ</span><span class="motion-label">Pause motion</span></button></div>
+    </section>
+    <div class="chapter-index wrap" aria-label="In this dossier">
+      <a href="#warnings"><span class="chapter-number">01</span><span>Listen to the builders<small>The voices</small></span><span aria-hidden="true">↗</span></a>
+      <a href="#forecast"><span class="chapter-number">02</span><span>Consider the trajectory<small>The forecasts</small></span><span aria-hidden="true">↗</span></a>
+      <a href="#door"><span class="chapter-number">03</span><span>Question the threshold<small>The argument</small></span><span aria-hidden="true">↗</span></a>
+    </div>
+    <section class="tension section wrap" aria-labelledby="tension-title">
+      <div class="section-heading"><p class="eyebrow">The central tension</p><h2 id="tension-title">Unprecedented capability.<br>
+<span class="muted">Unprecedented uncertainty.</span></h2></div>
+      <div class="tension-grid">
+        <div class="tension-point"><span class="line-mark blue" aria-hidden="true"></span><h3>The promise is enormous.</h3><p>AI could transform science, medicine, productivity, and economic power. Some of its leading figures expect a change comparable to—or beyond—the Industrial Revolution.</p></div>
+        <div class="tension-point"><span class="line-mark amber" aria-hidden="true"></span><h3>So are the stakes.</h3><p>Some of those same people warn that increasingly capable systems could create catastrophic risks, including the loss of human control.</p></div>
+      </div>
+      <p class="tension-question">What happens when our ability to build<br class="desktop-break"> outruns our ability to stay in control?</p>
+    </section>
+    <section class="voices paper" id="warnings" aria-labelledby="voices-title">
+      <div class="wrap section">
+        <div class="section-heading heading-row"><div><p class="eyebrow">01 / In their own words</p><h2 id="voices-title">Listen to the people<br>
+closest to it.</h2></div><p class="section-note">Four public statements.<br>
+Different perspectives.<br>
+A tension worth taking seriously.</p></div>
+        <div class="quote-tabs" aria-label="Choose a speaker" hidden>
+          <button type="button" id="tab-amodei" data-quote="quote-amodei">Dario Amodei<span>Anthropic</span></button>
+          <button type="button" id="tab-hassabis" data-quote="quote-hassabis">Demis Hassabis<span>Google DeepMind</span></button>
+          <button type="button" id="tab-altman" data-quote="quote-altman">Sam Altman<span>OpenAI</span></button>
+          <button type="button" id="tab-musk" data-quote="quote-musk">Elon Musk<span>Technology entrepreneur</span></button>
+        </div>
+        <div class="quote-stage">
+          <figure class="quote-panel" id="quote-amodei">
+            <div class="quote-meta"><span>Public statement / January 2026</span><span>01 — 04</span></div>
+            <blockquote>“Humanity is about to be handed almost unimaginable power, and it is deeply unclear whether our social, political, and technological systems possess the maturity to wield it.”</blockquote>
+            <figcaption><div><strong>Dario Amodei</strong><span>Anthropic · The Adolescence of Technology</span></div><a class="source-link" href="https://darioamodei.com/essay/the-adolescence-of-technology" target="_blank" rel="noopener noreferrer">Read the essay <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+          <figure class="quote-panel" id="quote-hassabis">
+            <div class="quote-meta"><span>Public statement / August 2025</span><span>02 — 04</span></div>
+            <blockquote>“AI is going to be 10 times bigger than the Industrial Revolution, and maybe 10 times faster.”</blockquote>
+            <figcaption><div><strong>Demis Hassabis</strong><span>Google DeepMind · The Guardian interview, 4 August 2025</span></div><a class="source-link" href="https://www.theguardian.com/technology/2025/aug/04/demis-hassabis-ai-future-10-times-bigger-than-industrial-revolution-and-10-times-faster" target="_blank" rel="noopener noreferrer">Read the interview <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+          <figure class="quote-panel" id="quote-altman">
+            <div class="quote-meta"><span>Historical remark / 2015</span><span>03 — 04</span></div>
+            <blockquote>“AI will probably most likely lead to the end of the world, but in the meantime, there’ll be great companies.”</blockquote>
+            <figcaption><div><strong>Sam Altman</strong><span>OpenAI · A 2015 remark, excerpted in the original dossier</span></div><a class="source-link" href="https://siepr.stanford.edu/news/what-point-do-we-decide-ais-risks-outweigh-its-promise" target="_blank" rel="noopener noreferrer">Read the context <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+          <figure class="quote-panel" id="quote-musk">
+            <div class="quote-meta"><span>Historical remark / October 2014</span><span>04 — 04</span></div>
+            <blockquote>“With artificial intelligence, we are summoning the demon. In all those stories where there’s the guy with the pentagram and the holy water, it’s like — yeah, he’s sure he can control the demon. Doesn’t work out.”</blockquote>
+            <figcaption><div><strong>Elon Musk</strong><span>MIT AeroAstro Centennial Symposium · October 2014</span></div><a class="source-link" href="https://www.theguardian.com/technology/2014/oct/27/elon-musk-artificial-intelligence-ai-biggest-existential-threat" target="_blank" rel="noopener noreferrer">Read the reporting <span aria-hidden="true">↗</span></a></figcaption>
+          </figure>
+        </div>
+        <p class="editorial-note">These statements reflect their original dates and contexts. They do not imply that the speakers agree on a probability, timeline, or policy response.</p>
+      </div>
+    </section>
+    <section class="section wrap pioneers" id="risk" aria-labelledby="pioneers-title">
+      <div class="section-heading heading-row"><div><p class="eyebrow">02 / The pioneers</p><h2 id="pioneers-title">They helped build it.<br>
+<span class="muted">They are asking us<br>
+to pay attention.</span></h2></div><p class="section-note">Research summaries and historical estimates from people who helped shape modern AI.</p></div>
+      <article class="researcher featured-researcher">
+        <div class="person"><span class="micro">01 / Neural networks</span><h3>Geoffrey<br>
+Hinton</h3><p>AI pioneer<br>
+Nobel Prize in Physics, 2024</p></div>
+        <div class="researcher-body"><div class="risk-stat"><span>10–20<span class="percent">%</span></span><p>His personal estimate of AI-related human extinction risk over the following 30 years.<small>Reported December 2024 · An individual judgment</small></p></div><p>Hinton helped establish the neural-network foundations of modern AI. He later left Google so he could speak more freely about the risks. His concern centers on whether humans can retain control over systems more intelligent than themselves.</p><details class="research-detail"><summary>Capability and context <span aria-hidden="true">+</span></summary><div><p>In his Nobel Prize interview, Hinton discussed a roughly 50% chance of AI becoming smarter than humans within 5–20 years. That was a forecast made at the time, with substantial uncertainty.</p><a class="source-link" href="https://www.nobelprize.org/prizes/physics/2024/hinton/interview/" target="_blank" rel="noopener noreferrer">Nobel Prize interview <span aria-hidden="true">↗</span></a></div></details><a class="source-link" href="https://www.theguardian.com/technology/2024/dec/27/godfather-of-ai-raises-odds-of-the-technology-wiping-out-humanity-over-next-30-years" target="_blank" rel="noopener noreferrer">Risk estimate · December 2024 <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="researcher">
+        <div class="person"><span class="micro">02 / Deep learning</span><h3>Yoshua<br>
+Bengio</h3><p>Turing Award winner</p></div>
+        <div class="researcher-body"><h4>What if we cannot take control back?</h4><p>Bengio and colleagues argue that unchecked AI agency can introduce deception, self-preservation, and a potentially irreversible loss of human control. Their 2025 paper explores whether a less agentic “Scientist AI” could offer a safer path.</p><details class="research-detail"><summary>Why agency matters <span aria-hidden="true">+</span></summary><div><p>The concern is about systems that can plan and pursue goals autonomously. Their usefulness does not, by itself, establish that those goals will remain compatible with human interests.</p></div></details><a class="source-link" href="https://arxiv.org/abs/2502.15657" target="_blank" rel="noopener noreferrer">Bengio et al. · Research paper, 2025 <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <article class="researcher">
+        <div class="person"><span class="micro">03 / Frontier systems</span><h3>Ilya<br>
+Sutskever</h3><p>Former OpenAI chief scientist</p></div>
+        <div class="researcher-body"><h4>AI will take an interest in you.</h4><p>In his 2025 University of Toronto convocation speech, Sutskever argued that AI will affect people whether or not they pay attention to it. Developments that seem imaginary today may become real as capabilities improve.</p><details class="research-detail"><summary>The challenge ahead <span aria-hidden="true">+</span></summary><div><p>He described the challenge posed by AI as, in some sense, humanity’s greatest challenge. His message to graduates was to recognize what is happening and pay attention.</p></div></details><a class="source-link" href="https://www.youtube.com/watch?v=79-bApI3GIU" target="_blank" rel="noopener noreferrer">University of Toronto · Speech, June 2025 <span aria-hidden="true">↗</span></a></div>
+      </article>
+      <aside class="strong-warning" aria-labelledby="yudkowsky-title"><div><p class="eyebrow">The strongest warning</p><h3 id="yudkowsky-title">Eliezer Yudkowsky</h3><span class="micro">AI alignment researcher</span></div><div><p class="warning-statement">The danger, in his view,<br>
+is existential.</p><p>Yudkowsky argues that building superhuman AI without a reliable alignment solution is likely to end in catastrophe. His 2023 TIME essay called for a halt to large AI training runs.</p><p class="small">His later book, <a class="inline-source" href="https://intelligence.org/2025/05/15/yudkowsky-and-soares-announce-major-new-book-if-anyone-builds-it-everyone-dies/" target="_blank" rel="noopener noreferrer"><cite>If Anyone Builds It, Everyone Dies</cite></a>, was coauthored with Nate Soares and published in 2025. This is one of the strongest positions in the debate, not a consensus probability.</p><a class="source-link" href="https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/" target="_blank" rel="noopener noreferrer">Read his argument · TIME, 2023 <span aria-hidden="true">↗</span></a></div></aside>
+    </section>
+    <section class="forecast section" id="forecast" aria-labelledby="forecast-title">
+      <div class="wrap"><div class="section-heading heading-row"><div><p class="eyebrow">03 / The trajectory</p><h2 id="forecast-title">The dates differ.<br>
+<span class="muted">The question remains.</span></h2></div><p class="section-note">How much time would we need to prepare for a system more capable than ourselves?</p></div>
+        <div class="forecast-grid">
+          <article><span class="micro">Dario Amodei / January 2026</span><h3>A short window.</h3><p>His essay describes powerful AI as a near-term possibility and examines whether society is ready to wield it.</p><a class="source-link" href="https://darioamodei.com/essay/the-adolescence-of-technology" target="_blank" rel="noopener noreferrer">The essay <span aria-hidden="true">↗</span></a></article>
+          <article><span class="micro">Demis Hassabis / August 2025</span><h3>5–10 years.</h3><p>His estimate for AGI in that interview.</p><a class="source-link" href="https://www.theguardian.com/technology/2025/aug/04/demis-hassabis-ai-future-10-times-bigger-than-industrial-revolution-and-10-times-faster" target="_blank" rel="noopener noreferrer">The interview <span aria-hidden="true">↗</span></a></article>
+          <article><span class="micro">Geoffrey Hinton / 2024</span><h3>5–20 years.</h3><p>A roughly 50% chance of AI becoming smarter than humans, in his Nobel Prize interview.</p><a class="source-link" href="https://www.nobelprize.org/prizes/physics/2024/hinton/interview/" target="_blank" rel="noopener noreferrer">The interview <span aria-hidden="true">↗</span></a></article>
+        </div>
+        <p class="editorial-note">Historical forecasts, measured from the dates shown. “AGI,” “powerful AI,” and “smarter than humans” are different thresholds; these estimates are not directly interchangeable.</p>
+        <div class="scenario"><div class="scenario-title"><span class="scenario-year" aria-hidden="true">2027</span><div><span class="tag">Scenario / Published April 2025</span><h3>What could acceleration look like?</h3><p>Daniel Kokotajlo and the AI Futures Project explore a possible race toward superhuman systems in <cite>AI 2027</cite>. The sequence below summarizes its acceleration mechanism. It is a scenario, not a confirmed prediction.</p><a class="source-link" href="https://ai-2027.com/" target="_blank" rel="noopener noreferrer">Explore AI 2027 <span aria-hidden="true">↗</span></a></div></div>
+          <ol class="scenario-steps"><li><span>01</span><h4>Automated coding</h4><p>More capable systems help build the next generation.</p></li><li><span>02</span><h4>Faster AI research</h4><p>Research accelerates as more of the work is automated.</p></li><li><span>03</span><h4>Superhuman systems</h4><p>Capabilities move beyond the reach of human teams.</p></li><li><span>04</span><h4>A critical decision</h4><p>Slow down—or continue amid unresolved control problems.</p></li></ol>
+        </div>
+      </div>
+    </section>
+    <section class="common section wrap" aria-labelledby="common-title"><div class="common-intro"><p class="eyebrow">The uncomfortable paradox</p><h2 id="common-title">We are building it<br>
+while warning<br>
+<span class="muted">about it.</span></h2><p>The speakers disagree on timelines and responses. Together, their statements raise three questions that cannot be settled by optimism alone.</p></div><ol class="question-list"><li><span>01</span><div><h3>Can our institutions keep up?</h3><p>Capability can advance faster than safety, governance, and international coordination.</p></div></li><li><span>02</span><div><h3>Does usefulness establish safety?</h3><p>The same power that could transform science and medicine could also create unprecedented harm.</p></div></li><li><span>03</span><div><h3>Can we remain in control?</h3><p>Increasing autonomy raises a harder question than intelligence alone: can human choices remain decisive?</p></div></li></ol></section>
+    <section class="door-section" id="door" aria-labelledby="door-title">
+      <div class="door-intro wrap section"><p class="eyebrow">04 / The Reversent argument</p><div class="door-heading"><h2 id="door-title">The door<br>
+we should<br>
+<em>never open.</em></h2><div class="door-emblem" aria-hidden="true"><div></div></div></div><div class="door-deck"><span class="micro">An essay by<br>
+Thor Fabian Pettersen</span><p>The danger is not only what superintelligence might do. It is what it would make possible.</p></div></div>
+      <div class="essay-layout wrap">
+        <aside class="essay-aside" aria-labelledby="warning-title">
+          <h3 class="warning-sign" id="warning-title"><span>DO</span> <span>NOT</span> <span>OPEN.</span></h3>
+          <p class="warning-thesis">The danger of superintelligence is not primarily that it will actualize hell. The danger is that we create the power that makes hell actualizable.</p>
+          <a class="source-link" href="the-door-we-should-never-open.pdf" download>Read the full argument <span aria-hidden="true">↓</span></a>
+        </aside>
+        <article class="essay" aria-label="The Door We Should Never Open: the argument">
+          <p class="eyebrow premises-label">The argument in five premises</p>
+          <ol class="premises"><li><span>01</span><p>Reality contains possible states that are currently unreachable.</p></li><li><span>02</span><p>Increasing power makes previously unreachable possibilities reachable.</p></li><li><span>03</span><p>Superintelligence could constitute an unprecedented increase in such power.</p></li><li><span>04</span><p>The newly reachable space could contain irreversible catastrophic states that we cannot presently rule out or perhaps even conceptualize.</p></li><li><span>05</span><p>Creating the capability is itself an intentional human action, while refusing to create it preserves future choice.</p></li></ol>
+          <div class="conclusion"><span class="eyebrow">Therefore</span><p>Humanity is not justified in deliberately creating superintelligence unless it can establish adequate control over the catastrophic regions of possibility space that the new capability would open.</p></div>
+          <blockquote class="essay-pullquote">Heaven does not justify<br>
+opening the door to hell.</blockquote>
+          <p>My conclusion is stronger: under no circumstances should anyone be allowed to deliberately create superintelligence, because that power would open vast regions of possibility space that have always been locked—and should stay locked forever.</p>
+          <p>We should stop building increasingly powerful AI until we can establish that it cannot cross the threshold into AGI and then superintelligence. And even then, we should be cautious.</p>
+          <a class="pdf-card" href="the-door-we-should-never-open.pdf" download><span class="pdf-icon" aria-hidden="true">PDF</span><span><strong>Read the full argument</strong><small>The Door We Should Never Open<br>
+Original Reversent essay · 87 KB</small></span><span class="pdf-arrow" aria-hidden="true">↓</span></a>
+        </article>
+      </div>
+    </section>
+    <section class="final-question section wrap" id="question" aria-labelledby="question-title"><p class="eyebrow">The question we should be asking</p><h2 id="question-title">What safeguards must exist<br>
+before we give AI<br>
+<span>irreversible power?</span></h2><p class="cautious-position">“The goal should not be panic or complacency—but building safeguards before capability outruns our ability to govern it.”</p>
+      <details class="author-view"><summary><span><span class="micro">My view</span><strong>“If you ask me, we should be panicking.”</strong></span><span class="detail-symbol" aria-hidden="true">+</span></summary><div><p class="author-context">The following is the author’s personal position from the original dossier. It describes feared possibilities, not established outcomes or a shared forecast.</p><p>That is the cautious position. But if you ask me, we should be panicking!</p><p>Superintelligence could potentially wipe us out as early as next year—or subject conscious beings to unimaginable, everlasting suffering.</p><p>And by everlasting, I mean suffering created by a digital god whose capabilities—and the horrors it could devise—are completely beyond our understanding.</p><p>Even if it grants us paradise, that paradise would ultimately be beyond our control—and could, at any moment, become something far worse: viz., the horrors that we cannot even begin to imagine.</p><p class="small">“Next year” is retained from the original text; it is not a rolling countdown or an independently verified timeline.</p></div></details>
+    </section>
+    <section class="network-section section" id="network" aria-labelledby="network-title"><div class="wrap"><div class="section-heading heading-row"><div><p class="eyebrow">Reversent Network</p><h2 id="network-title">Keep exploring.<br>
+<span class="muted">Keep the future open.</span></h2></div><p class="section-note">Research, practical AI safety, and the philosophical foundations behind Aegis.</p></div>
+      <div class="network-grid"><a href="https://thorfabian85.github.io/reversent/" target="_blank" rel="noopener noreferrer"><span class="micro">01 / Research</span><div class="network-glyph glyph-orbit" aria-hidden="true"><i></i></div><h3>Reversent Research</h3><p>The Aegis program, experiments,<br>
+and the case for reversibility.</p><span class="network-bottom">Keep the future open <span aria-hidden="true">↗</span></span></a><a href="https://thorfabian85.github.io/reversent-business/" target="_blank" rel="noopener noreferrer"><span class="micro">02 / Business</span><div class="network-glyph glyph-bars" aria-hidden="true"><i></i><i></i><i></i></div><h3>Reversent Business</h3><p>Practical AI safety<br>
+and evaluation.</p><span class="network-bottom">AI safety evaluation <span aria-hidden="true">↗</span></span></a><a href="https://thorfabian85.github.io/aegis-metaphysical-ocean/#top" target="_blank" rel="noopener noreferrer"><span class="micro">03 / Philosophy</span><div class="network-glyph glyph-waves" aria-hidden="true"><i></i><i></i><i></i></div><h3>Metaphysical Ocean</h3><p>Uncertainty, reality,<br>
+and the foundations of Aegis.</p><span class="network-bottom">The philosophical project <span aria-hidden="true">↗</span></span></a><a href="https://thorfabian85.github.io/aegis-introduction/" target="_blank" rel="noopener noreferrer"><span class="micro">04 / Introduction</span><div class="network-glyph glyph-v" aria-hidden="true"><img src="assets/reversent-mark.png" width="68" height="61" alt="" loading="lazy"></div><h3>Introducing Aegis</h3><p>A personal introduction<br>
+to the ideas behind the work.</p><span class="network-bottom">Begin with Aegis <span aria-hidden="true">↗</span></span></a></div>
+      <div class="contact-row"><div><span class="micro">Start a conversation</span><p>Questions, discussion, or collaboration.</p></div><a href="mailto:thorfabianpettersen@hotmail.com">thorfabianpettersen@hotmail.com <span aria-hidden="true">↗</span></a></div>
+    </div></section>
+  </main>
+  <footer class="site-footer wrap"><a class="brand" href="#top" aria-label="Reversent — return to top"><img src="assets/reversent-mark.png" width="34" height="31" alt="" loading="lazy"><span class="brand-name">REVERSENT</span></a><p>Independent research. An open future.</p><span class="micro">AI warnings / Reversent</span></footer>
 </div>
-<div>
-<div class="premises">
-<div class="premise">Reality contains possible states that are currently unreachable.</div>
-<div class="premise">Increasing power makes previously unreachable possibilities reachable.</div>
-<div class="premise">Superintelligence could constitute an unprecedented increase in such power.</div>
-<div class="premise">The newly reachable space could contain irreversible catastrophic states that we cannot presently rule out or perhaps even conceptualize.</div>
-<div class="premise">Creating the capability is itself an intentional human action, while refusing to create it preserves future choice.</div>
+  <dialog id="breach-scene" aria-labelledby="breach-title">
+    <h2 id="breach-title" class="sr-only">Fictional containment breach</h2>
+    <div class="scene-vignette" aria-hidden="true"></div>
+    <div class="scene-topline"><span id="scene-label">CONTAINMENT LOST</span><button type="button" id="scene-skip">Skip to ashes <span aria-hidden="true">↗</span></button></div>
+    <div class="scene-robot" aria-hidden="true"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 780" fill="none" aria-hidden="true">
+<defs>
+ <linearGradient id="steel" x1=".05" y1=".2" x2="1" y2=".65"><stop stop-color="#141b20"/><stop offset=".22" stop-color="#8a979e"/><stop offset=".37" stop-color="#e0e5e5"/><stop offset=".48" stop-color="#5b686f"/><stop offset=".7" stop-color="#242d34"/><stop offset=".88" stop-color="#9ca9ac"/><stop offset="1" stop-color="#272f35"/></linearGradient>
+ <linearGradient id="plate" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#cbd5d8"/><stop offset=".24" stop-color="#78888f"/><stop offset=".47" stop-color="#25313a"/><stop offset=".77" stop-color="#64727a"/><stop offset="1" stop-color="#111b22"/></linearGradient>
+ <linearGradient id="darkSteel"><stop stop-color="#080e13"/><stop offset=".33" stop-color="#3e4a54"/><stop offset=".55" stop-color="#869196"/><stop offset=".72" stop-color="#27313a"/><stop offset="1" stop-color="#090d11"/></linearGradient>
+ <linearGradient id="skull" x1=".12" y1=".12" x2=".85" y2=".9"><stop stop-color="#ced7da"/><stop offset=".3" stop-color="#70858e"/><stop offset=".5" stop-color="#cbd3d4"/><stop offset=".64" stop-color="#3b4953"/><stop offset=".88" stop-color="#899b9f"/><stop offset="1" stop-color="#161e27"/></linearGradient>
+ <radialGradient id="redEye"><stop stop-color="#fff0bd"/><stop offset=".17" stop-color="#ff9f78"/><stop offset=".38" stop-color="#ff3a21"/><stop offset=".75" stop-color="#b10a0a"/><stop offset="1" stop-color="#350305"/></radialGradient>
+ <radialGradient id="joint"><stop stop-color="#bcc8cc"/><stop offset=".28" stop-color="#4c5e68"/><stop offset=".54" stop-color="#121a22"/><stop offset=".77" stop-color="#85959c"/><stop offset="1" stop-color="#111a22"/></radialGradient>
+ <filter id="eyeGlow" x="-150%" y="-150%" width="400%" height="400%"><feGaussianBlur stdDeviation="5"/></filter>
+</defs>
+<!-- Articulated legs, driven by the site's scene clock. -->
+<g class="robot-leg robot-leg-left">
+ <path d="M204 432 224 430 231 522 217 547 192 526Z" fill="url(#darkSteel)" stroke="#859299"/>
+ <path d="M229 440 239 440 246 523 233 532Z" fill="url(#steel)"/>
+ <path d="M205 465 218 464 224 511 211 513Z" fill="#080d11"/>
+ <circle cx="215" cy="538" r="24" fill="url(#joint)"/><circle cx="215" cy="538" r="8" fill="#131c23" stroke="#8a9699"/>
+ <path d="M194 552 215 558 204 680 178 691 180 613Z" fill="url(#plate)" stroke="#6e7d84"/>
+ <path d="M220 559 230 560 220 679 210 680Z" fill="url(#steel)"/>
+ <path d="M186 611 200 610 192 667 182 670Z" fill="#121d25"/>
+ <circle cx="198" cy="689" r="18" fill="url(#joint)"/>
+ <path d="M178 695 210 694 213 730 184 745 126 744 131 726 164 714Z" fill="url(#darkSteel)" stroke="#849097"/>
+ <path d="M133 730 184 731 208 717M152 724 153 740M169 718 170 736" stroke="#99a5a9" stroke-width="2"/>
+</g>
+<g class="robot-leg robot-leg-right">
+ <path d="M279 434 301 432 316 524 298 545 272 529Z" fill="url(#darkSteel)" stroke="#71828a"/>
+ <path d="M268 441 278 440 288 523 277 532Z" fill="url(#steel)"/>
+ <path d="M288 463 300 463 307 512 293 513Z" fill="#080d11"/>
+ <circle cx="298" cy="539" r="25" fill="url(#joint)"/><circle cx="298" cy="539" r="8" fill="#131c23" stroke="#8a9699"/>
+ <path d="M284 559 307 554 326 621 327 692 304 692Z" fill="url(#plate)" stroke="#788991"/>
+ <path d="M275 560 285 560 301 681 292 683Z" fill="url(#steel)"/>
+ <path d="M309 608 320 612 323 672 312 670Z" fill="#111c25"/>
+ <circle cx="310" cy="691" r="18" fill="url(#joint)"/>
+ <path d="M294 702 321 696 337 720 370 731 373 747 323 747 297 733Z" fill="url(#darkSteel)" stroke="#849097"/>
+ <path d="M301 719 328 733 364 735M336 723 333 742M352 730 349 745" stroke="#99a5a9" stroke-width="2"/>
+</g>
+<!-- Spine, hip assembly and ribs. -->
+<path d="M233 295 266 295 269 416 234 416Z" fill="url(#darkSteel)" stroke="#8a999d"/>
+<path d="M231 315H270M231 330H270M231 345H270M231 360H270M231 375H270M231 390H270" stroke="#99a7ad" stroke-width="5"/>
+<path d="M206 325 219 326 235 395 224 403Z M280 326 292 325 282 404 270 397Z" fill="url(#steel)"/>
+<path d="M207 390 228 405 272 405 300 390 320 415 297 454 275 451 251 425 227 451 204 450 185 416Z" fill="url(#plate)" stroke="#a0aeb1" stroke-width="1.5"/>
+<circle cx="211" cy="425" r="18" fill="url(#joint)"/><circle cx="292" cy="425" r="18" fill="url(#joint)"/>
+<path d="M188 234 224 220 253 229 279 220 315 238 304 302 278 326 225 325 197 301Z" fill="#0b131b" stroke="#82969e" stroke-width="2"/>
+<path d="M182 234 214 228 243 245 240 278 192 257Z M261 246 290 226 323 234 312 260 267 278Z" fill="url(#plate)" stroke="#92a2a7"/>
+<path d="M193 269 239 288 240 300 194 280Z M198 289 240 307 239 319 204 305Z M266 290 310 270 309 282 267 302Z M266 309 306 290 300 306 266 321Z" fill="url(#steel)" stroke="#8999a1"/>
+<path d="M238 233 260 231 269 292 257 319 244 319 234 291Z" fill="url(#darkSteel)" stroke="#9aa9b0"/>
+<circle cx="250" cy="260" r="11" fill="url(#joint)"/><circle cx="250" cy="260" r="3" fill="#d12714"/>
+<path d="M188 294Q173 333 206 374M316 294Q330 332 297 375" stroke="#252f38" stroke-width="9"/><path d="M187 295Q175 332 205 372M316 295Q328 331 298 373" stroke="#6b7c85" stroke-width="2"/>
+<!-- Left arm and fingers. -->
+<g class="robot-arm-left">
+ <circle cx="169" cy="247" r="28" fill="url(#joint)"/><path d="M161 267 183 273 157 341 137 334Z" fill="url(#steel)" stroke="#72858e"/>
+ <path d="M145 269 154 273 137 333 128 331Z" fill="url(#darkSteel)"/>
+ <circle cx="142" cy="348" r="19" fill="url(#joint)"/>
+ <path d="M126 364 150 362 140 411 128 430 109 422Z" fill="url(#plate)" stroke="#8c9ba2"/><path d="M132 372 137 372 128 412 123 411Z" fill="#c5d3d6"/>
+ <path d="M110 422 135 430 130 452 108 454 97 438Z" fill="url(#darkSteel)" stroke="#7e909b"/>
+ <path d="M103 449 96 463 101 479M112 454 108 472 111 483M122 455 120 472 125 481M132 444 143 452 145 465" stroke="url(#steel)" stroke-width="7" stroke-linecap="round"/>
+</g>
+<!-- Neck and skull. -->
+<path d="M233 185 269 185 269 225 233 225Z" fill="url(#darkSteel)"/><path d="M233 195H269M233 206H269M233 217H269" stroke="#9dadb3" stroke-width="4"/>
+<path d="M222 183 233 190 224 222 215 219Z M270 191 280 184 287 220 278 224Z" fill="url(#steel)"/>
+<path d="M202 80 217 58 244 49 273 54 295 69 307 98 302 136 286 169 278 189 263 199 235 196 218 180 207 150 196 118Z" fill="url(#skull)" stroke="#a6b7bf" stroke-width="1.4"/>
+<path d="M211 82 225 68 268 67 289 82 287 102 263 113 244 107 220 110 211 103Z" fill="url(#plate)"/>
+<path d="M244 53 246 95M219 74 213 95M283 74 294 98" stroke="#dce3e4" stroke-opacity=".42" stroke-width="2"/>
+<path d="M204 111 224 111 244 122 238 140 217 142 205 131Z M257 122 278 111 299 112 295 134 279 142 261 137Z" fill="#030607" stroke="#637782" stroke-width="2"/>
+<path d="M202 107 226 109 244 120M256 120 280 109 303 106" stroke="#cbd4d6" stroke-width="5"/>
+<g filter="url(#eyeGlow)" fill="#ff2719"><ellipse cx="224" cy="127" rx="12" ry="6"/><ellipse cx="279" cy="127" rx="12" ry="6"/></g>
+<ellipse cx="224" cy="127" rx="10" ry="5" fill="url(#redEye)"/><ellipse cx="279" cy="127" rx="10" ry="5" fill="url(#redEye)"/>
+<path d="M249 124 244 143 239 150 250 153 261 149 255 143Z" fill="#101a20" stroke="#8d9da3"/>
+<path d="M209 139 222 151 223 170 211 160Z M282 151 297 138 294 160 281 171Z" fill="url(#darkSteel)"/>
+<path d="M221 161 235 157 268 159 282 164 275 183 263 191 240 188 224 179Z" fill="#05090c" stroke="#b4c0c3" stroke-width="3"/>
+<path d="M227 162 234 162 234 172 227 171Z M237 161 244 162 244 172 237 172Z M247 162 254 162 254 173 247 173Z M257 162 264 163 264 173 257 173Z M267 163 275 165 273 174 267 173Z" fill="#b6c3c6" stroke="#25343c"/>
+<path d="M231 181 235 174 266 176 270 183 260 188 241 186Z" fill="url(#steel)"/><path d="M237 179V185M246 178V186M255 179V187M264 180V186" stroke="#26333b" stroke-width="2"/>
+<path d="M195 104 189 110 194 134 205 144M307 103 315 109 310 137 299 146" fill="url(#darkSteel)" stroke="#8d9ca4"/>
+<!-- Foreground gun arm. The barrel points toward the viewer. -->
+<g class="robot-gun-arm">
+ <circle cx="332" cy="249" r="29" fill="url(#joint)"/>
+ <path d="M335 269 354 255 387 297 374 314Z" fill="url(#steel)" stroke="#a4b1b6"/>
+ <path d="M347 263 357 257 390 289 382 299Z" fill="url(#darkSteel)"/>
+ <circle cx="384" cy="308" r="21" fill="url(#joint)"/>
+ <path d="M389 288 409 290 432 321 417 345 397 333Z" fill="url(#plate)" stroke="#8c9fa8"/>
+ <path d="M409 312 436 309 452 332 446 356 429 359 413 343Z" fill="url(#steel)" stroke="#a6b0b4"/>
+ <path d="M421 331 438 327M424 340 444 336M428 349 446 345" stroke="#222f38" stroke-width="4"/>
+ <path d="M383 276 408 254 467 274 490 319 477 347 419 329Z" fill="url(#darkSteel)" stroke="#7e909b" stroke-width="2"/>
+ <path d="M412 321 424 327 419 372 397 366 401 328Z" fill="#10181f" stroke="#788b96"/>
+ <path d="M414 337 409 359M405 340 417 343M404 348 415 351M403 356 414 359" stroke="#40505a" stroke-width="2"/>
+ <path d="M405 264 456 284 467 306 413 287Z" fill="url(#plate)"/>
+ <path d="M413 257 426 245 475 267 486 281" stroke="#a6b1b5" stroke-width="5"/>
+ <path d="M436 286 481 304 475 338 430 321Z" fill="url(#steel)" stroke="#8498a3"/>
+ <ellipse cx="477" cy="316" rx="27" ry="34" transform="rotate(-18 477 316)" fill="url(#darkSteel)" stroke="#b5c0c4" stroke-width="2"/>
+ <ellipse cx="477" cy="316" rx="17" ry="24" transform="rotate(-18 477 316)" fill="#010305" stroke="#586b78" stroke-width="4"/>
+ <ellipse cx="477" cy="316" rx="9" ry="15" transform="rotate(-18 477 316)" fill="#170b08"/>
+ <path d="M389 276 395 288M399 278 405 291M409 282 415 296" stroke="#bcc8cd" stroke-opacity=".5" stroke-width="2"/>
+</g>
+</svg>
 </div>
-<div class="door-conclusion"><b>Therefore:</b> Humanity is not justified in deliberately creating superintelligence unless it can establish adequate control over the catastrophic regions of possibility space that the new capability would open.</div>
-<div class="door-line">Heaven does not justify opening the door to hell.</div>
-<p class="lede">My conclusion is stronger: under no circumstances should anyone be allowed to deliberately create superintelligence, because that power would open vast regions of possibility space that have always been locked—and should stay locked forever.</p>
-<p>We should stop building increasingly powerful AI until we can establish that it cannot cross the threshold into AGI and then superintelligence. And even then, we should be cautious.</p>
-<div class="download-card">
-<div class="docicon">PDF</div>
-<div><h3>Read the full argument</h3><p><i>The Door We Should Never Open</i> — a standalone Reversent essay on power, possibility and irreversible risk.</p></div>
-<a class="download-btn" href="the-door-we-should-never-open.pdf" download>Download PDF ↓</a>
-</div>
-</div></div></div></section>
-
-<section class="final-question" id="question"><div class="inner"><div class="eyebrow">THE QUESTION WE SHOULD BE ASKING</div><h2>What safeguards must exist before we give AI irreversible power?</h2><div class="q">If AI becomes vastly more capable than humans, what safeguards must exist before we give it irreversible power?</div><div class="final-safe">“The goal should not be panic or complacency—but building safeguards before capability outruns our ability to govern it.”</div><div class="personal"><div class="label">AUTHOR'S VIEW</div><p>That is the cautious position. But if you ask me, we should be panicking!</p><p>Superintelligence could potentially wipe us out as early as next year—or subject conscious beings to unimaginable, everlasting suffering.</p><p>And by everlasting, I mean suffering created by a digital god whose capabilities—and the horrors it could devise—are completely beyond our understanding.</p><p>Even if it grants us paradise, that paradise would ultimately be beyond our control—and could, at any moment, become something far worse: viz., the horrors that we cannot even begin to imagine.</p></div></div></section>
-
-<section class="network" id="network"><div class="network-in">
-  <div class="network-head">
-    <div><div class="eyebrow">REVERSENT NETWORK</div><h2>Explore the project.</h2></div>
-    <p>Research, practical AI-safety work, and the philosophical foundations behind Aegis.</p>
-  </div>
-  <div class="network-links">
-    <a class="network-link" href="https://thorfabian85.github.io/reversent/"><b>Research</b><span>KEEP THE FUTURE OPEN ↗</span></a>
-    <a class="network-link" href="https://thorfabian85.github.io/reversent-business/"><b>Business</b><span>AI SAFETY EVALUATION ↗</span></a>
-    <a class="network-link" href="https://thorfabian85.github.io/aegis-metaphysical-ocean/#top"><b>Metaphysical Ocean</b><span>AEGIS ↗</span></a>
-    <a class="network-link" href="https://thorfabian85.github.io/aegis-introduction/"><b>Introducing Aegis</b><span>THE INTRODUCTION ↗</span></a>
-  </div>
-  <div class="contact-row">
-    <div><div class="label">CONTACT</div><div>Questions, discussion, or collaboration.</div></div>
-    <a href="mailto:thorfabianpettersen@hotmail.com">thorfabianpettersen@hotmail.com</a>
-  </div>
-</div></section>
-
-<footer class="footer"><a class="brand brand-link" href="#top" aria-label="Back to top">REVERSENT<small>KEEP THE FUTURE OPEN</small></a></footer></body></html>
+    <canvas id="breach-canvas" aria-hidden="true"></canvas>
+    <div class="ash-actions" hidden><button type="button" id="restore-site">Restore <span aria-hidden="true">↺</span></button></div>
+    <p id="scene-announcement" class="sr-only" role="status" aria-live="polite"></p>
+  </dialog>
+  <script src="breach.js" defer></script>
+</body>
+</html>
